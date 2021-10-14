@@ -1,4 +1,4 @@
-package com.weatherapp;
+package ooo.impacto.weatherapp;
 
 import com.facebook.react.ReactActivity;
 
