@@ -1,0 +1,817 @@
+{
+  "TG9jYXRpb24gcGVybWlzc2lvbiBub3QgZ3JhbnRlZA==": {
+    "id": "TG9jYXRpb24gcGVybWlzc2lvbiBub3QgZ3JhbnRlZA==",
+    "context": null,
+    "text": "Location permission not granted",
+    "firstUsed": "2021-08-13T03:36:27.221Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/contexts/app/AppContext.tsx"
+    ]
+  },
+  "R28gdG8gaG9tZSBzY3JlZW4h": {
+    "id": "R28gdG8gaG9tZSBzY3JlZW4h",
+    "context": null,
+    "text": "Go to home screen!",
+    "firstUsed": "2021-08-31T11:08:15.160Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/screens/NotFoundScreen.tsx"
+    ]
+  },
+  "VGhpcyBzY3JlZW4gZG9lc24ndCBleGlzdC4=": {
+    "id": "VGhpcyBzY3JlZW4gZG9lc24ndCBleGlzdC4=",
+    "context": null,
+    "text": "This screen doesn't exist.",
+    "firstUsed": "2021-08-31T11:37:00.882Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/screens/NotFoundScreen.tsx"
+    ]
+  },
+  "RmVlbHMgbGlrZQ==": {
+    "id": "RmVlbHMgbGlrZQ==",
+    "context": null,
+    "text": "Feels like",
+    "firstUsed": "2021-09-02T10:03:16.254Z",
+    "unusedSince": null,
+    "sources": [
+      "src/weather/components/atoms/weatherdetail/index.tsx"
+    ]
+  },
+  "TWF4": {
+    "id": "TWF4",
+    "context": null,
+    "text": "Max",
+    "firstUsed": "2021-09-02T10:03:16.254Z",
+    "unusedSince": null,
+    "sources": [
+      "src/weather/components/molecules/temperatures/index.tsx"
+    ]
+  },
+  "TWlu": {
+    "id": "TWlu",
+    "context": null,
+    "text": "Min",
+    "firstUsed": "2021-09-02T10:03:16.254Z",
+    "unusedSince": null,
+    "sources": [
+      "src/weather/components/molecules/temperatures/index.tsx"
+    ]
+  },
+  "SHVtaWRpdHk=": {
+    "id": "SHVtaWRpdHk=",
+    "context": null,
+    "text": "Humidity",
+    "firstUsed": "2021-09-02T10:03:16.254Z",
+    "unusedSince": null,
+    "sources": [
+      "src/weather/components/molecules/temperatures/index.tsx"
+    ]
+  },
+  "TG9hZGluZy4uLg==": {
+    "id": "TG9hZGluZy4uLg==",
+    "context": null,
+    "text": "Loading...",
+    "firstUsed": "2021-09-03T15:42:45.641Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/screens/LoaderScreen.tsx"
+    ]
+  },
+  "Y2xlYXIgc2t5": {
+    "id": "Y2xlYXIgc2t5",
+    "context": null,
+    "text": "clear sky",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZmV3IGNsb3Vkcw==": {
+    "id": "ZmV3IGNsb3Vkcw==",
+    "context": null,
+    "text": "few clouds",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2NhdHRlcmVkIGNsb3Vkcw==": {
+    "id": "c2NhdHRlcmVkIGNsb3Vkcw==",
+    "context": null,
+    "text": "scattered clouds",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "YnJva2VuIGNsb3Vkcw==": {
+    "id": "YnJva2VuIGNsb3Vkcw==",
+    "context": null,
+    "text": "broken clouds",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2hvd2VyIHJhaW4=": {
+    "id": "c2hvd2VyIHJhaW4=",
+    "context": null,
+    "text": "shower rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts",
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "cmFpbg==": {
+    "id": "cmFpbg==",
+    "context": null,
+    "text": "rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3Jt": {
+    "id": "dGh1bmRlcnN0b3Jt",
+    "context": null,
+    "text": "thunderstorm",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts",
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c25vdw==": {
+    "id": "c25vdw==",
+    "context": null,
+    "text": "snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bWlzdA==": {
+    "id": "bWlzdA==",
+    "context": null,
+    "text": "mist",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts",
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3JtIHdpdGggbGlnaHQgcmFpbg==": {
+    "id": "dGh1bmRlcnN0b3JtIHdpdGggbGlnaHQgcmFpbg==",
+    "context": null,
+    "text": "thunderstorm with light rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3JtIHdpdGggcmFpbg==": {
+    "id": "dGh1bmRlcnN0b3JtIHdpdGggcmFpbg==",
+    "context": null,
+    "text": "thunderstorm with rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgcmFpbg==": {
+    "id": "dGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgcmFpbg==",
+    "context": null,
+    "text": "thunderstorm with heavy rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bGlnaHQgdGh1bmRlcnN0b3Jt": {
+    "id": "bGlnaHQgdGh1bmRlcnN0b3Jt",
+    "context": null,
+    "text": "light thunderstorm",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "aGVhdnkgdGh1bmRlcnN0b3Jt": {
+    "id": "aGVhdnkgdGh1bmRlcnN0b3Jt",
+    "context": null,
+    "text": "heavy thunderstorm",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "cmFnZ2VkIHRodW5kZXJzdG9ybQ==": {
+    "id": "cmFnZ2VkIHRodW5kZXJzdG9ybQ==",
+    "context": null,
+    "text": "ragged thunderstorm",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3JtIHdpdGggbGlnaHQgZHJpenpsZQ==": {
+    "id": "dGh1bmRlcnN0b3JtIHdpdGggbGlnaHQgZHJpenpsZQ==",
+    "context": null,
+    "text": "thunderstorm with light drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3JtIHdpdGggZHJpenpsZQ==": {
+    "id": "dGh1bmRlcnN0b3JtIHdpdGggZHJpenpsZQ==",
+    "context": null,
+    "text": "thunderstorm with drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgZHJpenpsZQ==": {
+    "id": "dGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgZHJpenpsZQ==",
+    "context": null,
+    "text": "thunderstorm with heavy drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bGlnaHQgaW50ZW5zaXR5IGRyaXp6bGU=": {
+    "id": "bGlnaHQgaW50ZW5zaXR5IGRyaXp6bGU=",
+    "context": null,
+    "text": "light intensity drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZHJpenpsZQ==": {
+    "id": "ZHJpenpsZQ==",
+    "context": null,
+    "text": "drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "aGVhdnkgaW50ZW5zaXR5IGRyaXp6bGU=": {
+    "id": "aGVhdnkgaW50ZW5zaXR5IGRyaXp6bGU=",
+    "context": null,
+    "text": "heavy intensity drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bGlnaHQgaW50ZW5zaXR5IGRyaXp6bGUgcmFpbg==": {
+    "id": "bGlnaHQgaW50ZW5zaXR5IGRyaXp6bGUgcmFpbg==",
+    "context": null,
+    "text": "light intensity drizzle rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZHJpenpsZSByYWlu": {
+    "id": "ZHJpenpsZSByYWlu",
+    "context": null,
+    "text": "drizzle rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "aGVhdnkgaW50ZW5zaXR5IGRyaXp6bGUgcmFpbg==": {
+    "id": "aGVhdnkgaW50ZW5zaXR5IGRyaXp6bGUgcmFpbg==",
+    "context": null,
+    "text": "heavy intensity drizzle rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2hvd2VyIHJhaW4gYW5kIGRyaXp6bGU=": {
+    "id": "c2hvd2VyIHJhaW4gYW5kIGRyaXp6bGU=",
+    "context": null,
+    "text": "shower rain and drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "aGVhdnkgc2hvd2VyIHJhaW4gYW5kIGRyaXp6bGU=": {
+    "id": "aGVhdnkgc2hvd2VyIHJhaW4gYW5kIGRyaXp6bGU=",
+    "context": null,
+    "text": "heavy shower rain and drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2hvd2VyIGRyaXp6bGU=": {
+    "id": "c2hvd2VyIGRyaXp6bGU=",
+    "context": null,
+    "text": "shower drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bGlnaHQgcmFpbg==": {
+    "id": "bGlnaHQgcmFpbg==",
+    "context": null,
+    "text": "light rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bW9kZXJhdGUgcmFpbg==": {
+    "id": "bW9kZXJhdGUgcmFpbg==",
+    "context": null,
+    "text": "moderate rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "aGVhdnkgaW50ZW5zaXR5IHJhaW4=": {
+    "id": "aGVhdnkgaW50ZW5zaXR5IHJhaW4=",
+    "context": null,
+    "text": "heavy intensity rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dmVyeSBoZWF2eSByYWlu": {
+    "id": "dmVyeSBoZWF2eSByYWlu",
+    "context": null,
+    "text": "very heavy rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZXh0cmVtZSByYWlu": {
+    "id": "ZXh0cmVtZSByYWlu",
+    "context": null,
+    "text": "extreme rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZnJlZXppbmcgcmFpbg==": {
+    "id": "ZnJlZXppbmcgcmFpbg==",
+    "context": null,
+    "text": "freezing rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bGlnaHQgaW50ZW5zaXR5IHNob3dlciByYWlu": {
+    "id": "bGlnaHQgaW50ZW5zaXR5IHNob3dlciByYWlu",
+    "context": null,
+    "text": "light intensity shower rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "aGVhdnkgaW50ZW5zaXR5IHNob3dlciByYWlu": {
+    "id": "aGVhdnkgaW50ZW5zaXR5IHNob3dlciByYWlu",
+    "context": null,
+    "text": "heavy intensity shower rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "cmFnZ2VkIHNob3dlciByYWlu": {
+    "id": "cmFnZ2VkIHNob3dlciByYWlu",
+    "context": null,
+    "text": "ragged shower rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "bGlnaHQgc25vdw==": {
+    "id": "bGlnaHQgc25vdw==",
+    "context": null,
+    "text": "light snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U25vdw==": {
+    "id": "U25vdw==",
+    "context": null,
+    "text": "Snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "SGVhdnkgc25vdw==": {
+    "id": "SGVhdnkgc25vdw==",
+    "context": null,
+    "text": "Heavy snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U2xlZXQ=": {
+    "id": "U2xlZXQ=",
+    "context": null,
+    "text": "Sleet",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "TGlnaHQgc2hvd2VyIHNsZWV0": {
+    "id": "TGlnaHQgc2hvd2VyIHNsZWV0",
+    "context": null,
+    "text": "Light shower sleet",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U2hvd2VyIHNsZWV0": {
+    "id": "U2hvd2VyIHNsZWV0",
+    "context": null,
+    "text": "Shower sleet",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "TGlnaHQgcmFpbiBhbmQgc25vdw==": {
+    "id": "TGlnaHQgcmFpbiBhbmQgc25vdw==",
+    "context": null,
+    "text": "Light rain and snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "UmFpbiBhbmQgc25vdw==": {
+    "id": "UmFpbiBhbmQgc25vdw==",
+    "context": null,
+    "text": "Rain and snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "TGlnaHQgc2hvd2VyIHNub3c=": {
+    "id": "TGlnaHQgc2hvd2VyIHNub3c=",
+    "context": null,
+    "text": "Light shower snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U2hvd2VyIHNub3c=": {
+    "id": "U2hvd2VyIHNub3c=",
+    "context": null,
+    "text": "Shower snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "SGVhdnkgc2hvd2VyIHNub3c=": {
+    "id": "SGVhdnkgc2hvd2VyIHNub3c=",
+    "context": null,
+    "text": "Heavy shower snow",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U21va2U=": {
+    "id": "U21va2U=",
+    "context": null,
+    "text": "Smoke",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "SGF6ZQ==": {
+    "id": "SGF6ZQ==",
+    "context": null,
+    "text": "Haze",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2FuZC8gZHVzdCB3aGlybHM=": {
+    "id": "c2FuZC8gZHVzdCB3aGlybHM=",
+    "context": null,
+    "text": "sand/ dust whirls",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "Zm9n": {
+    "id": "Zm9n",
+    "context": null,
+    "text": "fog",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2FuZA==": {
+    "id": "c2FuZA==",
+    "context": null,
+    "text": "sand",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZHVzdA==": {
+    "id": "ZHVzdA==",
+    "context": null,
+    "text": "dust",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dm9sY2FuaWMgYXNo": {
+    "id": "dm9sY2FuaWMgYXNo",
+    "context": null,
+    "text": "volcanic ash",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c3F1YWxscw==": {
+    "id": "c3F1YWxscw==",
+    "context": null,
+    "text": "squalls",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "dG9ybmFkbw==": {
+    "id": "dG9ybmFkbw==",
+    "context": null,
+    "text": "tornado",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "ZmV3IGNsb3VkczogMTEtMjUl": {
+    "id": "ZmV3IGNsb3VkczogMTEtMjUl",
+    "context": null,
+    "text": "few clouds: 11-25%",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "c2NhdHRlcmVkIGNsb3VkczogMjUtNTAl": {
+    "id": "c2NhdHRlcmVkIGNsb3VkczogMjUtNTAl",
+    "context": null,
+    "text": "scattered clouds: 25-50%",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "YnJva2VuIGNsb3VkczogNTEtODQl": {
+    "id": "YnJva2VuIGNsb3VkczogNTEtODQl",
+    "context": null,
+    "text": "broken clouds: 51-84%",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "b3ZlcmNhc3QgY2xvdWRzOiA4NS0xMDAl": {
+    "id": "b3ZlcmNhc3QgY2xvdWRzOiA4NS0xMDAl",
+    "context": null,
+    "text": "overcast clouds: 85-100%",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "Q2xvdWRz": {
+    "id": "Q2xvdWRz",
+    "context": null,
+    "text": "Clouds",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts",
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "Q2xlYXI=": {
+    "id": "Q2xlYXI=",
+    "context": null,
+    "text": "Clear",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts",
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "VGh1bmRlcnN0b3Jt": {
+    "id": "VGh1bmRlcnN0b3Jt",
+    "context": null,
+    "text": "Thunderstorm",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "RHJpenpsZQ==": {
+    "id": "RHJpenpsZQ==",
+    "context": null,
+    "text": "Drizzle",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "UmFpbg==": {
+    "id": "UmFpbg==",
+    "context": null,
+    "text": "Rain",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "TWlzdA==": {
+    "id": "TWlzdA==",
+    "context": null,
+    "text": "Mist",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "RHVzdA==": {
+    "id": "RHVzdA==",
+    "context": null,
+    "text": "Dust",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "Rm9n": {
+    "id": "Rm9n",
+    "context": null,
+    "text": "Fog",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U2FuZA==": {
+    "id": "U2FuZA==",
+    "context": null,
+    "text": "Sand",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "QXNo": {
+    "id": "QXNo",
+    "context": null,
+    "text": "Ash",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "U3F1YWxs": {
+    "id": "U3F1YWxs",
+    "context": null,
+    "text": "Squall",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "VG9ybmFkbw==": {
+    "id": "VG9ybmFkbw==",
+    "context": null,
+    "text": "Tornado",
+    "firstUsed": "2021-09-04T15:28:04.789Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/locales/translations.ts"
+    ]
+  },
+  "VHVybiBvbiB5b3VyIGxvY2F0aW9uIGZpcnN0": {
+    "id": "VHVybiBvbiB5b3VyIGxvY2F0aW9uIGZpcnN0",
+    "context": null,
+    "text": "Turn on your location first",
+    "firstUsed": "2021-09-11T17:04:09.512Z",
+    "unusedSince": null,
+    "sources": [
+      "src/app/contexts/app/AppContext.tsx"
+    ]
+  }
+}

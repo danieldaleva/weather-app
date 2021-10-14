@@ -1,23 +1,25 @@
-// import { useThemeColor } from 'app/hooks';
+import {
+  GradientView,
+  ResponsiveScrollView,
+  ResponsiveView,
+} from 'app/components/atoms';
+import { useThemeColor } from 'app/hooks';
 
 import React from 'react';
-import { SafeAreaView, View } from 'react-native';
 
 import StorybookUIRoot from 'storybook';
 
 const StorybookScreen: React.FC = () => {
-  // const colors = useThemeColor('gradient', null) as string[];
+  const colors = useThemeColor('gradient', null) as string[];
 
   return (
-    // <ScrollView>
-    <View nativeID="Storybook">
-      <SafeAreaView>
-        <View>
+    <ResponsiveScrollView>
+      <GradientView nativeID="Storybook" colors={colors} type="parent">
+        <ResponsiveView type="parent">
           <StorybookUIRoot />
-        </View>
-      </SafeAreaView>
-    </View>
-    // </ScrollView>
+        </ResponsiveView>
+      </GradientView>
+    </ResponsiveScrollView>
   );
 };
 

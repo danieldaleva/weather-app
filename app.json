@@ -1,4 +1,27 @@
 {
   "name": "WeatherApp",
-  "displayName": "WeatherApp"
+  "displayName": "WeatherApp",
+  "scheme": "wmap",
+  "expo": {
+    "name": "WeatherApp",
+    "slug": "WeatherApp",
+    "icon": "./src/app/assets/resources/icon.png",
+    "scheme": "wmap",
+    "userInterfaceStyle": "automatic",
+    "primaryColor": "#39a0d3",
+    "backgroundColor": "#39a0d3",
+    "splash": {
+      "image": "./src/app/assets/resources/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#39a0d3",
+      "updates": {
+        "fallbackToCacheTimeout": 0
+      },
+      "assetBundlePatterns": ["**/*"],
+      "web": {
+        "favicon": "./src/app/assets/resources/favicon.png",
+        "themeColor": "#39a0d3"
+      }
+    }
+  }
 }

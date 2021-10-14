@@ -1,0 +1,680 @@
+{
+  "09a4f386-cdf3-455c-9030-5e8ef7e03bd7": {
+    "id": "09a4f386-cdf3-455c-9030-5e8ef7e03bd7",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Se denegó el permiso para acceder a la ubicación",
+    "fuzzy": false,
+    "keyId": "UGVybWlzc2lvbiB0byBhY2Nlc3MgbG9jYXRpb24gd2FzIGRlbmllZA=="
+  },
+  "3b5640d9-28f5-4d89-8eb9-3cbd9592d1b0": {
+    "id": "3b5640d9-28f5-4d89-8eb9-3cbd9592d1b0",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Error:",
+    "fuzzy": true,
+    "keyId": "RXJyb3I6IA=="
+  },
+  "44353a85-565c-4666-94b5-442765e1c3a7": {
+    "id": "44353a85-565c-4666-94b5-442765e1c3a7",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Permiso de ubicación no concedido",
+    "fuzzy": true,
+    "keyId": "TG9jYXRpb24gcGVybWlzc2lvbiBub3QgZ3JhbnRlZA=="
+  },
+  "3f0162fe-2cc4-493d-a966-d49fa7edcc6f": {
+    "id": "3f0162fe-2cc4-493d-a966-d49fa7edcc6f",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Primero apaga tu ubicación",
+    "fuzzy": true,
+    "keyId": "VHVybiBvZmYgeW91ciBsb2NhdGlvbiBmaXJzdA=="
+  },
+  "d108d27a-8ad5-4578-b3c6-f9b84cbbfcce": {
+    "id": "d108d27a-8ad5-4578-b3c6-f9b84cbbfcce",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "¡Ve a la pantalla de inicio!",
+    "fuzzy": true,
+    "keyId": "R28gdG8gaG9tZSBzY3JlZW4h"
+  },
+  "8960b258-531b-47a4-9d1d-f679672f6caa": {
+    "id": "8960b258-531b-47a4-9d1d-f679672f6caa",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Esta pantalla no existe.",
+    "fuzzy": true,
+    "keyId": "VGhpcyBzY3JlZW4gZG9lc24ndCBleGlzdC4="
+  },
+  "24cba92d-c400-4771-8c4d-6449162ab457": {
+    "id": "24cba92d-c400-4771-8c4d-6449162ab457",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Min",
+    "fuzzy": true,
+    "keyId": "TWlu"
+  },
+  "6166a3af-50f6-4974-880f-c11a4910ada8": {
+    "id": "6166a3af-50f6-4974-880f-c11a4910ada8",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Humedad",
+    "fuzzy": true,
+    "keyId": "SHVtaWRpdHk="
+  },
+  "b5328ecf-0842-4031-8145-68584d045b02": {
+    "id": "b5328ecf-0842-4031-8145-68584d045b02",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Se siente como",
+    "fuzzy": true,
+    "keyId": "RmVlbHMgbGlrZQ=="
+  },
+  "f78eef4f-c499-4441-87a5-85c98c5d7037": {
+    "id": "f78eef4f-c499-4441-87a5-85c98c5d7037",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Max",
+    "fuzzy": true,
+    "keyId": "TWF4"
+  },
+  "4701bdca-8f4f-4e55-aa2c-c5de734e97ef": {
+    "id": "4701bdca-8f4f-4e55-aa2c-c5de734e97ef",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Cargando...",
+    "fuzzy": true,
+    "keyId": "TG9hZGluZy4uLg=="
+  },
+  "5702e488-5330-4965-88fc-50a7eb965bb1": {
+    "id": "5702e488-5330-4965-88fc-50a7eb965bb1",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "No se puede obtener la ubicación incluso si los servicios están habilitados",
+    "fuzzy": true,
+    "keyId": "VW5hYmxlIHRvIGdldCBsb2NhdGlvbiBldmVuIGlmIHNlcnZpY2VzIGFyZSBlbmFibGVk"
+  },
+  "9ac12dde-8ab5-4cb1-bf1e-3ac37a0ae370": {
+    "id": "9ac12dde-8ab5-4cb1-bf1e-3ac37a0ae370",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "llovizna de gran intensidad",
+    "fuzzy": true,
+    "keyId": "aGVhdnkgaW50ZW5zaXR5IGRyaXp6bGUgcmFpbg=="
+  },
+  "b5f65df5-e79e-417c-a82d-09c1a5eb98d3": {
+    "id": "b5f65df5-e79e-417c-a82d-09c1a5eb98d3",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nubes nubladas: 85-100%",
+    "fuzzy": true,
+    "keyId": "b3ZlcmNhc3QgY2xvdWRzOiA4NS0xMDAl"
+  },
+  "8cf12ab1-65f5-4dc7-a74f-8020701af9c2": {
+    "id": "8cf12ab1-65f5-4dc7-a74f-8020701af9c2",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "llovizna de intensidad ligera",
+    "fuzzy": true,
+    "keyId": "bGlnaHQgaW50ZW5zaXR5IGRyaXp6bGU="
+  },
+  "1ce87984-d878-4cf2-87b1-dc740001ba7b": {
+    "id": "1ce87984-d878-4cf2-87b1-dc740001ba7b",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nieve",
+    "fuzzy": true,
+    "keyId": "c25vdw=="
+  },
+  "28bb880c-8a10-4501-b08c-2f2b96c22eb0": {
+    "id": "28bb880c-8a10-4501-b08c-2f2b96c22eb0",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta con lluvia ligera",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3JtIHdpdGggbGlnaHQgcmFpbg=="
+  },
+  "c87a0629-1f18-4d84-8098-4c106bbff064": {
+    "id": "c87a0629-1f18-4d84-8098-4c106bbff064",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia ligera llovizna",
+    "fuzzy": true,
+    "keyId": "bGlnaHQgaW50ZW5zaXR5IGRyaXp6bGUgcmFpbg=="
+  },
+  "1f18b147-8545-4341-8be0-269f46f8d5e8": {
+    "id": "1f18b147-8545-4341-8be0-269f46f8d5e8",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Claro",
+    "fuzzy": true,
+    "keyId": "Q2xlYXI="
+  },
+  "a5b1b56d-e8be-47e0-9f68-099239173235": {
+    "id": "a5b1b56d-e8be-47e0-9f68-099239173235",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Ducha de nieve",
+    "fuzzy": true,
+    "keyId": "U2hvd2VyIHNub3c="
+  },
+  "9b8b80f1-3ee7-4150-b93d-8fda5544c14b": {
+    "id": "9b8b80f1-3ee7-4150-b93d-8fda5544c14b",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia fuerte lluvia y llovizna",
+    "fuzzy": true,
+    "keyId": "aGVhdnkgc2hvd2VyIHJhaW4gYW5kIGRyaXp6bGU="
+  },
+  "f1d68077-7562-4f4b-aa1d-a8ccaa90c2b8": {
+    "id": "f1d68077-7562-4f4b-aa1d-a8ccaa90c2b8",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia de lluvia de intensidad ligera",
+    "fuzzy": true,
+    "keyId": "bGlnaHQgaW50ZW5zaXR5IHNob3dlciByYWlu"
+  },
+  "4be51c9e-1890-43d4-a722-072cbe8710c7": {
+    "id": "4be51c9e-1890-43d4-a722-072cbe8710c7",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Neblina",
+    "fuzzy": true,
+    "keyId": "TWlzdA=="
+  },
+  "0dacd6a1-dd8b-409d-9e93-370d89ef884b": {
+    "id": "0dacd6a1-dd8b-409d-9e93-370d89ef884b",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "llovizna de ducha",
+    "fuzzy": true,
+    "keyId": "c2hvd2VyIGRyaXp6bGU="
+  },
+  "b9b6f14e-6eb7-4830-be9c-94e68dd8dcef": {
+    "id": "b9b6f14e-6eb7-4830-be9c-94e68dd8dcef",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta con lluvia intensa",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgcmFpbg=="
+  },
+  "ff53df0b-8fdb-49c1-878d-5d68dba4ed02": {
+    "id": "ff53df0b-8fdb-49c1-878d-5d68dba4ed02",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta con lluvia",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3JtIHdpdGggcmFpbg=="
+  },
+  "bf5cbd9a-8cf8-4460-ae46-5ed09626d4ba": {
+    "id": "bf5cbd9a-8cf8-4460-ae46-5ed09626d4ba",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia ligera",
+    "fuzzy": true,
+    "keyId": "bGlnaHQgcmFpbg=="
+  },
+  "aaecd189-830e-4f7b-a45e-8fdee8d368c6": {
+    "id": "aaecd189-830e-4f7b-a45e-8fdee8d368c6",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3Jt"
+  },
+  "295ee00c-5ad0-4f80-91e5-beb2c4f6d780": {
+    "id": "295ee00c-5ad0-4f80-91e5-beb2c4f6d780",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Niebla",
+    "fuzzy": true,
+    "keyId": "Rm9n"
+  },
+  "10424057-56e8-4fc8-9109-6bb6cc711186": {
+    "id": "10424057-56e8-4fc8-9109-6bb6cc711186",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia extrema",
+    "fuzzy": true,
+    "keyId": "ZXh0cmVtZSByYWlu"
+  },
+  "200eac31-b3aa-4518-803d-3513dcb3fc65": {
+    "id": "200eac31-b3aa-4518-803d-3513dcb3fc65",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Calina",
+    "fuzzy": true,
+    "keyId": "SGF6ZQ=="
+  },
+  "67924f2c-394e-4c9d-a1c6-fe2bb7e1f174": {
+    "id": "67924f2c-394e-4c9d-a1c6-fe2bb7e1f174",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nubes rotas: 51-84%",
+    "fuzzy": true,
+    "keyId": "YnJva2VuIGNsb3VkczogNTEtODQl"
+  },
+  "98fa04ce-956f-4e6a-9e92-7147f76cbc3c": {
+    "id": "98fa04ce-956f-4e6a-9e92-7147f76cbc3c",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "llovizna",
+    "fuzzy": true,
+    "keyId": "ZHJpenpsZSByYWlu"
+  },
+  "0053c72b-e49e-4e4f-a505-88f9ffa66088": {
+    "id": "0053c72b-e49e-4e4f-a505-88f9ffa66088",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia irregular de la ducha",
+    "fuzzy": true,
+    "keyId": "cmFnZ2VkIHNob3dlciByYWlu"
+  },
+  "4a2de20e-42b4-4fbe-8f99-efdc8ec9c906": {
+    "id": "4a2de20e-42b4-4fbe-8f99-efdc8ec9c906",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "ducha lluvia y llovizna",
+    "fuzzy": true,
+    "keyId": "c2hvd2VyIHJhaW4gYW5kIGRyaXp6bGU="
+  },
+  "1240da9d-8692-447b-a602-a6e75607f1c0": {
+    "id": "1240da9d-8692-447b-a602-a6e75607f1c0",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "cielo limpio",
+    "fuzzy": true,
+    "keyId": "Y2xlYXIgc2t5"
+  },
+  "d954c0e0-b622-46e7-8a7f-5f9b9bccc933": {
+    "id": "d954c0e0-b622-46e7-8a7f-5f9b9bccc933",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "llovizna de gran intensidad",
+    "fuzzy": true,
+    "keyId": "aGVhdnkgaW50ZW5zaXR5IGRyaXp6bGU="
+  },
+  "1bd94caf-6443-4c10-99cb-c63c24a63bbf": {
+    "id": "1bd94caf-6443-4c10-99cb-c63c24a63bbf",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvias muy intensas",
+    "fuzzy": true,
+    "keyId": "dmVyeSBoZWF2eSByYWlu"
+  },
+  "5b84f2a2-862d-4622-a9c2-807754ee77d7": {
+    "id": "5b84f2a2-862d-4622-a9c2-807754ee77d7",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tornado",
+    "fuzzy": true,
+    "keyId": "dG9ybmFkbw=="
+  },
+  "9fecafb0-fc44-4ffc-ab0b-94aa85511a16": {
+    "id": "9fecafb0-fc44-4ffc-ab0b-94aa85511a16",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "neblina",
+    "fuzzy": true,
+    "keyId": "bWlzdA=="
+  },
+  "7787abca-b194-458d-b668-04bedf3c0b45": {
+    "id": "7787abca-b194-458d-b668-04bedf3c0b45",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "ceniza volcánica",
+    "fuzzy": true,
+    "keyId": "dm9sY2FuaWMgYXNo"
+  },
+  "0ca60463-6e19-491d-8a09-ab135be848f2": {
+    "id": "0ca60463-6e19-491d-8a09-ab135be848f2",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "aguacero",
+    "fuzzy": true,
+    "keyId": "c2hvd2VyIHJhaW4="
+  },
+  "18552bd0-6e86-4484-9793-4573cfd37d19": {
+    "id": "18552bd0-6e86-4484-9793-4573cfd37d19",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia",
+    "fuzzy": true,
+    "keyId": "cmFpbg=="
+  },
+  "1e162ed3-cb4d-42ee-8be7-d0217f0f6ff4": {
+    "id": "1e162ed3-cb4d-42ee-8be7-d0217f0f6ff4",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia intensa",
+    "fuzzy": true,
+    "keyId": "aGVhdnkgaW50ZW5zaXR5IHJhaW4="
+  },
+  "9bbe5c7c-273c-4cd1-b9e7-969f00d0ef18": {
+    "id": "9bbe5c7c-273c-4cd1-b9e7-969f00d0ef18",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "pocas nubes",
+    "fuzzy": true,
+    "keyId": "ZmV3IGNsb3Vkcw=="
+  },
+  "51ec4217-6daf-444e-a253-ee2e14c38618": {
+    "id": "51ec4217-6daf-444e-a253-ee2e14c38618",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta ligera",
+    "fuzzy": true,
+    "keyId": "bGlnaHQgdGh1bmRlcnN0b3Jt"
+  },
+  "208d5f21-dddd-482b-879a-919dbd95fa8c": {
+    "id": "208d5f21-dddd-482b-879a-919dbd95fa8c",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta con llovizna ligera",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3JtIHdpdGggbGlnaHQgZHJpenpsZQ=="
+  },
+  "0d7df364-df10-45eb-b5ab-672d7b385cbe": {
+    "id": "0d7df364-df10-45eb-b5ab-672d7b385cbe",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "borrascas",
+    "fuzzy": true,
+    "keyId": "c3F1YWxscw=="
+  },
+  "f0a3064f-9b8a-4585-ac4e-b9e97e9fca81": {
+    "id": "f0a3064f-9b8a-4585-ac4e-b9e97e9fca81",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta irregular",
+    "fuzzy": true,
+    "keyId": "cmFnZ2VkIHRodW5kZXJzdG9ybQ=="
+  },
+  "56ed1c1b-9e7e-4684-b72d-de1c5155a26e": {
+    "id": "56ed1c1b-9e7e-4684-b72d-de1c5155a26e",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Lluvia ligera de nieve",
+    "fuzzy": true,
+    "keyId": "TGlnaHQgc2hvd2VyIHNub3c="
+  },
+  "1496dc2b-2dba-404f-809f-fbda19108983": {
+    "id": "1496dc2b-2dba-404f-809f-fbda19108983",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Llovizna",
+    "fuzzy": true,
+    "keyId": "RHJpenpsZQ=="
+  },
+  "2f26bdf4-c447-4207-8bc7-e4c233bd35f6": {
+    "id": "2f26bdf4-c447-4207-8bc7-e4c233bd35f6",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "arena",
+    "fuzzy": true,
+    "keyId": "c2FuZA=="
+  },
+  "e0a5ac17-5649-4a78-a640-74345e604b73": {
+    "id": "e0a5ac17-5649-4a78-a640-74345e604b73",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Nieve",
+    "fuzzy": true,
+    "keyId": "U25vdw=="
+  },
+  "3731316e-5484-42b4-82ad-acd4af451ea0": {
+    "id": "3731316e-5484-42b4-82ad-acd4af451ea0",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Nubes",
+    "fuzzy": true,
+    "keyId": "Q2xvdWRz"
+  },
+  "1ee9ecda-a93e-4a6a-99db-20bf134734b0": {
+    "id": "1ee9ecda-a93e-4a6a-99db-20bf134734b0",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta con llovizna",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3JtIHdpdGggZHJpenpsZQ=="
+  },
+  "91777dff-dd76-4563-9a57-0e16ef5d923d": {
+    "id": "91777dff-dd76-4563-9a57-0e16ef5d923d",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Fumar",
+    "fuzzy": true,
+    "keyId": "U21va2U="
+  },
+  "b13b07b3-2142-4a89-9ceb-08624ecf500e": {
+    "id": "b13b07b3-2142-4a89-9ceb-08624ecf500e",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia moderada",
+    "fuzzy": true,
+    "keyId": "bW9kZXJhdGUgcmFpbg=="
+  },
+  "b6673c81-13d8-4ba7-b327-508cd100507e": {
+    "id": "b6673c81-13d8-4ba7-b327-508cd100507e",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Lluvia",
+    "fuzzy": true,
+    "keyId": "UmFpbg=="
+  },
+  "fd0585b7-8861-4f0d-be29-743c7dfc8d80": {
+    "id": "fd0585b7-8861-4f0d-be29-743c7dfc8d80",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "llovizna",
+    "fuzzy": true,
+    "keyId": "ZHJpenpsZQ=="
+  },
+  "cbe225ca-1e77-43ec-9bb9-68b16ea00365": {
+    "id": "cbe225ca-1e77-43ec-9bb9-68b16ea00365",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Aguanieve",
+    "fuzzy": true,
+    "keyId": "U2xlZXQ="
+  },
+  "1e3f700d-5f8a-44e1-af81-a30a567664a3": {
+    "id": "1e3f700d-5f8a-44e1-af81-a30a567664a3",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nubes dispersas: 25-50%",
+    "fuzzy": true,
+    "keyId": "c2NhdHRlcmVkIGNsb3VkczogMjUtNTAl"
+  },
+  "0992a7bb-5509-4c2a-a115-9a8024b7884c": {
+    "id": "0992a7bb-5509-4c2a-a115-9a8024b7884c",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Lluvia ligera y nieve",
+    "fuzzy": true,
+    "keyId": "TGlnaHQgcmFpbiBhbmQgc25vdw=="
+  },
+  "20c87b4e-7588-43d2-97c1-b63b901a594f": {
+    "id": "20c87b4e-7588-43d2-97c1-b63b901a594f",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "pocas nubes: 11-25%",
+    "fuzzy": true,
+    "keyId": "ZmV3IGNsb3VkczogMTEtMjUl"
+  },
+  "56c46c20-dec0-4b61-bf71-1c8803c9ca4d": {
+    "id": "56c46c20-dec0-4b61-bf71-1c8803c9ca4d",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Fuertes nevadas",
+    "fuzzy": true,
+    "keyId": "SGVhdnkgc25vdw=="
+  },
+  "d13ee686-4ee4-4205-b6fe-c0077e036e1d": {
+    "id": "d13ee686-4ee4-4205-b6fe-c0077e036e1d",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nieve ligera",
+    "fuzzy": true,
+    "keyId": "bGlnaHQgc25vdw=="
+  },
+  "9bc7700c-d4bf-462a-aa8f-a68a9d18e70d": {
+    "id": "9bc7700c-d4bf-462a-aa8f-a68a9d18e70d",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Lluvia y nieve",
+    "fuzzy": true,
+    "keyId": "UmFpbiBhbmQgc25vdw=="
+  },
+  "888f6440-dc0d-45f7-ab65-0327c65ed192": {
+    "id": "888f6440-dc0d-45f7-ab65-0327c65ed192",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "tormenta con llovizna intensa",
+    "fuzzy": true,
+    "keyId": "dGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgZHJpenpsZQ=="
+  },
+  "c66efef5-a018-40ed-a929-10b458c2da2f": {
+    "id": "c66efef5-a018-40ed-a929-10b458c2da2f",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nubes dispersas",
+    "fuzzy": true,
+    "keyId": "c2NhdHRlcmVkIGNsb3Vkcw=="
+  },
+  "914e773f-a616-4ced-b1c4-5cebe7710ac0": {
+    "id": "914e773f-a616-4ced-b1c4-5cebe7710ac0",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Fuerte lluvia de nieve",
+    "fuzzy": true,
+    "keyId": "SGVhdnkgc2hvd2VyIHNub3c="
+  },
+  "1f04cbd5-a138-47ee-9931-1b24e1a78962": {
+    "id": "1f04cbd5-a138-47ee-9931-1b24e1a78962",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Polvo",
+    "fuzzy": true,
+    "keyId": "RHVzdA=="
+  },
+  "76c3e920-875f-41c6-abdd-a823326f17c2": {
+    "id": "76c3e920-875f-41c6-abdd-a823326f17c2",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Chubasco",
+    "fuzzy": true,
+    "keyId": "U3F1YWxs"
+  },
+  "1161962b-561f-426b-b148-11112d195357": {
+    "id": "1161962b-561f-426b-b148-11112d195357",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "chubascos de lluvia de gran intensidad",
+    "fuzzy": true,
+    "keyId": "aGVhdnkgaW50ZW5zaXR5IHNob3dlciByYWlu"
+  },
+  "6bd579e5-0be9-4354-8257-60ad501f9912": {
+    "id": "6bd579e5-0be9-4354-8257-60ad501f9912",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "niebla",
+    "fuzzy": true,
+    "keyId": "Zm9n"
+  },
+  "a6d632eb-0eb9-4c04-be8b-dbad60ac9e90": {
+    "id": "a6d632eb-0eb9-4c04-be8b-dbad60ac9e90",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "fuerte tormenta",
+    "fuzzy": true,
+    "keyId": "aGVhdnkgdGh1bmRlcnN0b3Jt"
+  },
+  "647b2948-c372-4c1e-908b-20d8f7db317e": {
+    "id": "647b2948-c372-4c1e-908b-20d8f7db317e",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Lluvia ligera de aguanieve",
+    "fuzzy": true,
+    "keyId": "TGlnaHQgc2hvd2VyIHNsZWV0"
+  },
+  "908a3168-de9a-4c56-a8f3-91641d1fbea8": {
+    "id": "908a3168-de9a-4c56-a8f3-91641d1fbea8",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Tornado",
+    "fuzzy": true,
+    "keyId": "VG9ybmFkbw=="
+  },
+  "0e04b2c9-e54a-475b-b59e-6e0b1e5e7e0a": {
+    "id": "0e04b2c9-e54a-475b-b59e-6e0b1e5e7e0a",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Tormenta",
+    "fuzzy": true,
+    "keyId": "VGh1bmRlcnN0b3Jt"
+  },
+  "063024bb-741c-4d52-ab5c-4b11c76c5d95": {
+    "id": "063024bb-741c-4d52-ab5c-4b11c76c5d95",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Ceniza",
+    "fuzzy": true,
+    "keyId": "QXNo"
+  },
+  "e056244d-725a-4668-96f5-ba5a473abddd": {
+    "id": "e056244d-725a-4668-96f5-ba5a473abddd",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "polvo",
+    "fuzzy": true,
+    "keyId": "ZHVzdA=="
+  },
+  "c565dab2-9da0-474e-bde2-d8509fadfce8": {
+    "id": "c565dab2-9da0-474e-bde2-d8509fadfce8",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Arena",
+    "fuzzy": true,
+    "keyId": "U2FuZA=="
+  },
+  "c49dacca-b256-4128-a3f5-b1da930d5fd9": {
+    "id": "c49dacca-b256-4128-a3f5-b1da930d5fd9",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "remolinos de arena / polvo",
+    "fuzzy": true,
+    "keyId": "c2FuZC8gZHVzdCB3aGlybHM="
+  },
+  "8ce05648-5d1f-4dd2-8814-a853b6b4653e": {
+    "id": "8ce05648-5d1f-4dd2-8814-a853b6b4653e",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "nubes rotas",
+    "fuzzy": true,
+    "keyId": "YnJva2VuIGNsb3Vkcw=="
+  },
+  "842a4f05-28c5-4a4d-84ac-323725c3d01e": {
+    "id": "842a4f05-28c5-4a4d-84ac-323725c3d01e",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "lluvia congelante",
+    "keyId": "ZnJlZXppbmcgcmFpbg=="
+  },
+  "50a5699a-efc2-4e2d-9dae-b1ef7ad43b29": {
+    "id": "50a5699a-efc2-4e2d-9dae-b1ef7ad43b29",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Lluvia de nieve",
+    "keyId": "U2hvd2VyIHNsZWV0"
+  },
+  "a1b6075f-2b16-4bf1-9394-9b60151cc9f6": {
+    "id": "a1b6075f-2b16-4bf1-9394-9b60151cc9f6",
+    "isDeleted": false,
+    "lang": "es",
+    "translation": "Enciende tu ubicación primero",
+    "fuzzy": true,
+    "keyId": "VHVybiBvbiB5b3VyIGxvY2F0aW9uIGZpcnN0"
+  }
+}
