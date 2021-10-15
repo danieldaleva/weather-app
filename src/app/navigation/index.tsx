@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// import Toast from 'app/components/atoms/toast';
+import Toast from 'app/components/atoms/toast';
 // import LoaderScreen from 'app/screens/loader/LoaderScreen';
 // import { AppContext } from 'app/contexts/app/AppContext';
 // import { useCachedResources } from 'app/hooks';
@@ -11,6 +11,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import LinkingOptions from './LinkingOptions';
 import { Colors } from 'app/styles';
 import StorybookScreen from 'storybook/screens/StorybookScreen';
+import { AppContext } from 'app/contexts/app/AppContext';
 
 export enum Routes {
   Root = 'Root',
@@ -22,14 +23,14 @@ export enum Routes {
 const RootStack = createNativeStackNavigator();
 
 const Navigation: React.FC = () => {
-  // const { app } = useContext(AppContext);
+  const { app } = useContext(AppContext);
   // const isResourceLoadingComplete = useCachedResources();
   return (
     <NavigationContainer
       theme={{ dark: true, colors: Colors.dark }}
       // linking={LinkingOptions}
     >
-      {/* {app.error && <Toast message={app.error.message} />} */}
+      {app.error && <Toast message={app.error.message} />}
       <RootStack.Navigator
         // initialRouteName={Routes.Root}
         screenOptions={{

@@ -15,7 +15,7 @@ declare global {
 
   interface WeatherEntity {
     readonly defaultUnit: UnitEntity;
-    readonly weather: WeatherResponseEntity | Record<string, any>;
+    readonly weather: WeatherResponseEntity | unknown;
   }
 
   interface RemoteDataEntity extends WeatherEntity {
