@@ -13,13 +13,13 @@ const StorybookScreen: React.FC = () => {
   const colors = useThemeColor('gradient', null) as string[];
 
   return (
-    <ResponsiveScrollView>
-      <GradientView nativeID="Storybook" colors={colors} type="parent">
-        <ResponsiveView type="parent">
-          <StorybookUIRoot />
-        </ResponsiveView>
-      </GradientView>
-    </ResponsiveScrollView>
+    // <ResponsiveScrollView>
+    <GradientView nativeID="Storybook" colors={colors} type="parent">
+      <ResponsiveView type="parent">
+        <StorybookUIRoot />
+      </ResponsiveView>
+    </GradientView>
+    // </ResponsiveScrollView>
   );
 };
 
