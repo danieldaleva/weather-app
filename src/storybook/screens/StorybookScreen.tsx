@@ -15,9 +15,7 @@ const StorybookScreen: React.FC = () => {
   return (
     // <ResponsiveScrollView>
     <GradientView nativeID="Storybook" colors={colors} type="parent">
-      <ResponsiveView type="parent">
-        <StorybookUIRoot />
-      </ResponsiveView>
+      <ResponsiveView type="parent">{/* <StorybookUIRoot /> */}</ResponsiveView>
     </GradientView>
     // </ResponsiveScrollView>
   );

@@ -1,12 +1,13 @@
 // import './wydr';
 
 import AppContextProvider from 'app/contexts/app/AppContext';
+import WeatherContextProvider from 'weather/contexts/weather/WeatherContext';
 import { useThemeColor } from 'app/hooks';
 import Navigation from 'app/navigation';
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import WeatherContextProvider from 'weather/contexts/weather/WeatherContext';
+
 import { enableScreens } from 'react-native-screens';
 
 enableScreens(true);

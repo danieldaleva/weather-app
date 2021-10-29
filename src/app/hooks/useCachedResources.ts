@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Platform } from 'react-native';
-// import Utils from 'weather/utils';
+import Utils from 'weather/utils';
 
-// const utils = new Utils();
+const utils = new Utils();
 
 const useCachedResources = (): NonNullable<boolean> => {
   const [isLoadingComplete, setLoadingComplete] = React.useState(false);
@@ -15,9 +15,9 @@ const useCachedResources = (): NonNullable<boolean> => {
    */
   const loadResourcesAndDataAsync = async (): Promise<void> => {
     try {
-      // await utils.appLoadFonts();
+      await utils.appLoadFonts();
       if (Platform.OS === 'web') {
-        // await utils.appLoadWeatherImages();
+        await utils.appLoadWeatherImages();
       }
     } catch (error: any) {
       throw new Error(error);

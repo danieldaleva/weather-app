@@ -14,8 +14,8 @@ class LocalStorage implements LocalStorageInterface {
 
   getLocalStorage = async (key: string): Promise<any> => {
     try {
-      const data: string | null = await AsyncStorage.getItem(key);
-      return data ? JSON.parse(data) : data;
+      const data = await AsyncStorage.getItem(key);
+      return data !== null ? JSON.parse(data) : null;
     } catch (error: any) {
       throw new Error(error);
     }

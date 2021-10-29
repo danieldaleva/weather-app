@@ -1,4 +1,5 @@
 import { themes } from '@storybook/theming';
+import { AppRegistry } from 'react-native';
 
 import {
   getStorybookUI,
@@ -20,5 +21,7 @@ const StorybookUIRoot = getStorybookUI({
   asyncStorage: null,
   theme: themes.dark,
 });
+
+AppRegistry.registerComponent('%APP_NAME%', () => StorybookUIRoot);
 
 export default StorybookUIRoot;

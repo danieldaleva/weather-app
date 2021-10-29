@@ -3,52 +3,45 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Toast from 'app/components/atoms/toast';
-// import LoaderScreen from 'app/screens/loader/LoaderScreen';
-// import { AppContext } from 'app/contexts/app/AppContext';
-// import { useCachedResources } from 'app/hooks';
+import LoaderScreen from 'app/screens/loader/LoaderScreen';
 
-// import BottomTabNavigator from './BottomTabNavigation';
-// import LinkingOptions from './LinkingOptions';
+import { useCachedResources } from 'app/hooks';
+
 import { Colors } from 'app/styles';
-import StorybookScreen from 'storybook/screens/StorybookScreen';
-import { AppContext } from 'app/contexts/app/AppContext';
 
-export enum Routes {
-  Root = 'Root',
-  Weather = 'Weather',
-  Storybook = 'Storybook',
-  Loader = 'Loader',
-}
+import BottomTabNavigator from './BottomTabNavigation';
+import { AppContext } from 'app/contexts/app/AppContext';
+import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
+import { Routes } from './types';
 
 const RootStack = createNativeStackNavigator();
 
 const Navigation: React.FC = () => {
   const { app } = useContext(AppContext);
-  // const isResourceLoadingComplete = useCachedResources();
+  const { data } = useContext(WeatherContext);
+  const isResourceLoadingComplete = useCachedResources();
+
   return (
-    <NavigationContainer
-      theme={{ dark: true, colors: Colors.dark }}
-      // linking={LinkingOptions}
-    >
+    <NavigationContainer theme={{ dark: true, colors: Colors.dark }}>
       {app.error && <Toast message={app.error.message} />}
       <RootStack.Navigator
-        // initialRouteName={Routes.Root}
+        initialRouteName={Routes.Root}
         screenOptions={{
           headerShown: false,
         }}>
-        {/* {app.isDataLoaded && isResourceLoadingComplete ? ( */}
-        <RootStack.Screen
-          name="Storybook"
-          component={StorybookScreen}
-          options={{ title: 'Weather App' }}
-        />
-        {/* ) : (
+        {app.isAppLoaded && data.isDataLoaded && isResourceLoadingComplete ? (
+          <RootStack.Screen
+            name={Routes.Root}
+            component={BottomTabNavigator}
+            options={{ title: 'Weather App' }}
+          />
+        ) : (
           <RootStack.Screen
             name={Routes.Loader}
             component={LoaderScreen}
             options={{ title: 'Loading...' }}
           />
-        )} */}
+        )}
       </RootStack.Navigator>
     </NavigationContainer>
   );

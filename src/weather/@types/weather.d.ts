@@ -15,6 +15,7 @@ declare global {
 
   interface WeatherEntity {
     readonly defaultUnit: UnitEntity;
+    readonly isDataLoaded: boolean;
     readonly weather: WeatherResponseEntity | unknown;
   }
 

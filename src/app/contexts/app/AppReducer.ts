@@ -76,13 +76,10 @@ const AppReducer: React.Reducer<any, ReducerEntity> = (
         isConnected: action.payload.isConnected,
       };
 
-    case 'SET_APP_IS_DATA_LOADED':
-      if ((state as AppEntity).isDataLoaded === action.payload.isDataLoaded) {
-        return state;
-      }
+    case 'SET_APP_IS_LOADED':
       return {
         ...(state as AppEntity),
-        isDataLoaded: action.payload.isDataLoaded,
+        isAppLoaded: action.payload.isAppLoaded,
       };
     case 'SET_ERROR':
       return {

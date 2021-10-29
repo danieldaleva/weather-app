@@ -1,6 +1,6 @@
 import React, { ReducerState } from 'react';
 
-const WeatherReducer: React.Reducer<WeatherEntity, ReducerEntity> = (
+const WeatherReducer: React.Reducer<any, ReducerEntity> = (
   state: ReducerState<any>,
   action: ReducerEntity,
 ) => {
@@ -32,6 +32,14 @@ const WeatherReducer: React.Reducer<WeatherEntity, ReducerEntity> = (
       return {
         ...(state as any),
         defaultUnit: action.payload.defaultUnit,
+      };
+    case 'SET_WEATHER_IS_DATA_LOADED':
+      if ((state as any).isDataLoaded === action.payload.isDataLoaded) {
+        return state;
+      }
+      return {
+        ...(state as any),
+        isDataLoaded: action.payload.isDataLoaded,
       };
     default:
       return state;

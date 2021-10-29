@@ -137,6 +137,7 @@ class Utils extends AppUtils implements WeatherUtils {
     const defaultUnit = await this.getWeatherDefaultUnit(unit);
 
     let payload: RemoteDataEntity = {
+      isDataLoaded: false,
       weather: {},
       defaultUnit,
     };
@@ -150,7 +151,11 @@ class Utils extends AppUtils implements WeatherUtils {
         const response = await apiController.handle(request);
 
         if (response?.data) {
-          payload = { weather: response.data, defaultUnit };
+          payload = {
+            isDataLoaded: true,
+            weather: response.data,
+            defaultUnit,
+          };
 
           await this.setWeatherLocalStorage(payload);
           return payload;
@@ -158,6 +163,7 @@ class Utils extends AppUtils implements WeatherUtils {
         setTimeout(() => this.getWeatherRemoteData(app, unit), 5000);
       } catch (error: any) {
         payload = {
+          isDataLoaded: false,
           weather: {},
           defaultUnit,
           error: {
