@@ -33,8 +33,11 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
 ) => {
   const [data, dispatchData] = useReducer(WeatherReducer, initialState);
   const { app, dispatchApp } = useContext(AppContext);
-  const [weather, setWeather] = useState({});
-  const [defaultUnit, setDefaultUnit] = useState(weatherConstants.defaultUnit);
+  const [weather, setWeather] = useState<RemoteDataEntity | unknown>({});
+  const [defaultUnit, setDefaultUnit] = useState<UnitEntity>(
+    weatherConstants.defaultUnit,
+  );
+  const [error, setError] = useState<Error | null>(null);
 
   const { children } = props;
 
@@ -58,22 +61,12 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
     const response = await utils.getWeatherRemoteData(app, unit.id);
 
     if (response.error) {
-      dispatchApp({
-        type: 'SET_ERROR',
-        payload: {
-          error: response.error,
-        },
-      });
+      setError(response.error);
     } else {
-      dispatchData({
-        type: 'SET_ALL_WEATHER_DATA',
-        payload: {
-          defaultUnit: response.defaultUnit,
-          weather: response.weather,
-        },
-      });
+      setWeather(response.weather);
+      setDefaultUnit(response.defaultUnit);
     }
-  }, [app, dispatchApp]);
+  }, [app]);
 
   /**
    * Get Local Storage if
@@ -88,15 +81,11 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
     );
 
     if (minute < weatherConstants.REFRESH_TIME) {
-      LocalStorage.getLocalStorage('currentData').then(currentData => {
-        dispatchData({
-          type: 'SET_ALL_WEATHER_DATA',
-          payload: {
-            defaultUnit: currentData.defaultUnit,
-            weather: currentData.weather,
-          },
-        });
-      });
+      const currentData = await LocalStorage.getLocalStorage('currentData');
+      if (currentData !== null) {
+        setWeather(currentData.weather);
+        setDefaultUnit(currentData.defaultUnit);
+      }
     }
   }, []);
 
@@ -128,11 +117,30 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
         });
       });
     }
-  }, [app.location, getLocalStorageData, handleRemoteData]);
+  }, [app, getLocalStorageData, handleRemoteData]);
 
   useEffect(() => {
     (async () => await handleData())();
-  }, [handleData, app.location]);
+  }, [handleData, app]);
+
+  useEffect(() => {
+    dispatchData({
+      type: 'SET_ALL_WEATHER_DATA',
+      payload: {
+        defaultUnit,
+        weather,
+      },
+    });
+  }, [weather, defaultUnit]);
+
+  useEffect(() => {
+    dispatchApp({
+      type: 'SET_ERROR',
+      payload: {
+        error,
+      },
+    });
+  }, [dispatchApp, error]);
 
   return (
     <WeatherContext.Provider

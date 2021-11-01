@@ -20,7 +20,7 @@ const BottomTabNavigator: React.FC = () => (
       tabBarInactiveTintColor: Colors.dark.tabIconDefault,
       tabBarActiveTintColor: Colors.dark.tabIconSelected,
       tabBarStyle: {
-        backgroundColor: Colors.dark.background,
+        backgroundColor: Colors.dark.default,
         height: TAB_BOTTOM_DEFAULT_PADDING,
         paddingBottom: Platform.OS === 'ios' ? 30 : 20,
         paddingTop: 8,

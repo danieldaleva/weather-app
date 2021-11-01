@@ -28,7 +28,7 @@ const MainTemperature: React.FC = () => {
 
   const handleSetTemp = useCallback(() => {
     const weather = data.weather as WeatherResponseEntity;
-    const temperature = weather.main.temp as number;
+    const temperature = Math.round(weather.main.temp as number);
     setTemp(temperature);
   }, [data]);
 

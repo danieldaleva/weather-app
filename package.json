@@ -25,6 +25,7 @@
     "@react-navigation/native-stack": "^6.2.4",
     "axios": "^0.23.0",
     "expo": "^42.0.4",
+    "expo-font": "~9.2.1",
     "expo-linear-gradient": "~9.2.0",
     "expo-localization": "~10.2.0",
     "expo-location": "~12.1.2",
