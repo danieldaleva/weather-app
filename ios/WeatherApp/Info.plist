@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>wmap</string>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>ooo.impacto.WeatherApp</string>
+		</dict>
+	</array>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Your location is required on order to provide precise Weather information</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

@@ -78,7 +78,7 @@ class Utils extends AppUtils implements WeatherUtils {
       placeholder: await import('weather/assets/svg/placeholder.svg'),
     };
 
-    LocalStorage.setLocalStorage('icons', icons);
+    await LocalStorage.setLocalStorage('icons', icons);
   };
 
   /** getWeatherApiUrl

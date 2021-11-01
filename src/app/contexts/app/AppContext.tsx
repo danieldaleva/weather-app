@@ -71,7 +71,7 @@ const AppContextProvider: React.FC = (props: ReactPropsEntity) => {
       },
     );
 
-    Geolocation.watchPosition(
+    const watch = Geolocation.watchPosition(
       position => {
         setLocation(position);
       },
@@ -93,7 +93,7 @@ const AppContextProvider: React.FC = (props: ReactPropsEntity) => {
         useSignificantChanges: true,
       },
     );
-    // return () => Geolocation.clearWatch(watch);
+    return () => Geolocation.clearWatch(watch);
   }, []);
 
   /**

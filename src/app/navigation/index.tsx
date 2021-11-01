@@ -13,13 +13,14 @@ import BottomTabNavigator from './BottomTabNavigation';
 import { AppContext } from 'app/contexts/app/AppContext';
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 import { Routes } from './types';
+import AppLoading from 'expo-app-loading';
 
 const RootStack = createNativeStackNavigator();
 
 const Navigation: React.FC = () => {
+  const isResourceLoadingComplete = useCachedResources();
   const { app } = useContext(AppContext);
   const { data } = useContext(WeatherContext);
-  const isResourceLoadingComplete = useCachedResources();
 
   return (
     <NavigationContainer theme={{ dark: true, colors: Colors.dark }}>

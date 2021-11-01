@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Platform } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
+
 import Utils from 'weather/utils';
 
 const utils = new Utils();
@@ -15,6 +17,7 @@ const useCachedResources = (): NonNullable<boolean> => {
    */
   const loadResourcesAndDataAsync = async (): Promise<void> => {
     try {
+      SplashScreen.preventAutoHideAsync();
       await utils.appLoadFonts();
       if (Platform.OS === 'web') {
         await utils.appLoadWeatherImages();
@@ -23,6 +26,7 @@ const useCachedResources = (): NonNullable<boolean> => {
       throw new Error(error);
     } finally {
       setLoadingComplete(true);
+      SplashScreen.hideAsync();
     }
   };
 
