@@ -38,7 +38,6 @@ class Utils implements AppUtils {
    * @returns {Promise<void>}
    */
   appLoadFonts = async (): Promise<void> => {
-    console.log('Loading fonts...');
     await Font.loadAsync({
       ...Ionicons.font,
       ...FontAwesome5.font,
@@ -62,7 +61,6 @@ class Utils implements AppUtils {
       'Swiss721-Light-Regular': require('app/assets/fonts/swisscl.ttf'),
       'Swiss721-Light-Italic': require('app/assets/fonts/swisscli.ttf'),
     });
-    console.log('done...');
   };
 }
 

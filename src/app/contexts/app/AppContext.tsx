@@ -71,29 +71,30 @@ const AppContextProvider: React.FC = (props: ReactPropsEntity) => {
       },
     );
 
-    const watch = Geolocation.watchPosition(
-      position => {
-        setLocation(position);
-      },
-      async (err: GeolocationError) => {
-        const { status } = await Location.requestForegroundPermissionsAsync();
-        if (status !== 'granted') {
-          setError({
-            name: 'LOCATION_NOT_PERMITED',
-            message: JSON.stringify(err),
-          });
-        }
-        appLocation();
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 100000,
-        distanceFilter: 200,
-        useSignificantChanges: true,
-      },
-    );
-    return () => Geolocation.clearWatch(watch);
+    // TODO: implement Watch Position after Last Position
+    //  Geolocation.watchPosition(
+    //   position => {
+    //     setLocation(position);
+    //   },
+    //   async (err: GeolocationError) => {
+    //     const { status } = await Location.requestForegroundPermissionsAsync();
+    //     if (status !== 'granted') {
+    //       setError({
+    //         name: 'LOCATION_NOT_PERMITED',
+    //         message: JSON.stringify(err),
+    //       });
+    //     }
+    //     appLocation();
+    //   },
+    //   {
+    //     enableHighAccuracy: true,
+    //     timeout: 5000,
+    //     maximumAge: 100000,
+    //     distanceFilter: 200,
+    //     useSignificantChanges: true,
+    //   },
+    // );
+    // return () => Geolocation.clearWatch(watch);
   }, []);
 
   /**

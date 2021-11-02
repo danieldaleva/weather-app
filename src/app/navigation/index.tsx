@@ -13,7 +13,6 @@ import BottomTabNavigator from './BottomTabNavigation';
 import { AppContext } from 'app/contexts/app/AppContext';
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 import { Routes } from './types';
-import AppLoading from 'expo-app-loading';
 
 const RootStack = createNativeStackNavigator();
 

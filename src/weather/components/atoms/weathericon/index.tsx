@@ -1,13 +1,13 @@
 import React from 'react';
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 import { useContext, useState, useCallback, useEffect } from 'react';
 import { ImageProps, Platform, StyleProp, Image } from 'react-native';
-import { SvgProps } from 'react-native-svg';
+import { SvgProps, SvgWithCss } from 'react-native-svg';
 
-import LocalStorage from 'app/services/storage';
+import LocalStorage from 'app/providers/storage';
 
 import * as weatherConstants from 'weather/constants';
-import * as IconComponents from 'weather/components/atoms/weathericon/IconList';
+import * as IconComponents from './IconList';
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 
 import { Icons } from 'weather/styles';
@@ -23,7 +23,7 @@ export const getWeatherIcon = async (
   viewBox?: string,
   width?: number | undefined,
   height?: number | undefined,
-) => {
+): Promise<JSX.Element> => {
   if (Platform.OS === 'web') {
     const cachedIcons = await getCachedIcons();
     const Icon = await cachedIcons[id];
@@ -33,11 +33,11 @@ export const getWeatherIcon = async (
   }
 
   const list: { [key: string]: any } = IconComponents;
-
-  const Icon = list[id];
+  const idUppercase = id.toUpperCase();
 
   return (
-    <Icon
+    <SvgWithCss
+      xml={list[idUppercase]}
       width={width || Icons.default.width}
       height={height || Icons.default.height}
       viewBox={viewBox || Icons.default.viewBox}
@@ -64,7 +64,7 @@ const WeatherIcon: React.FC<{
    * iconCode: 11d
    */
   const getIcon = useCallback(async () => {
-    if (data && utils.isObjectNotEmpty(data.weather)) {
+    if (data.isDataLoaded && utils.isObjectNotEmpty(data.weather)) {
       const weather = data.weather as WeatherResponseEntity;
       let iconIndex = 0;
       if (!id) {
@@ -103,7 +103,9 @@ const WeatherIcon: React.FC<{
   }, [data, height, id, styles, viewBox, width]);
 
   useEffect(() => {
-    getIcon();
+    if (data.isDataLoaded) {
+      getIcon();
+    }
   }, [data, getIcon]);
 
   return icon || null;

@@ -4,12 +4,10 @@ import Constants from 'expo-constants';
 export const styles = StyleSheet.create({
   container: {
     marginTop: Constants.statusBarHeight,
-    flex: 1,
+    width: '100%',
   },
   header: {
-    paddingTop: 30,
+    paddingTop: 20,
   },
-  footer: {
-    flex: 1,
-  },
+  footer: {},
 });

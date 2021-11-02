@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Platform } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 
 const utils = new Utils();
 

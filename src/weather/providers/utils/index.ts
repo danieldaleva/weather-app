@@ -1,10 +1,10 @@
 import { GeolocationResponse } from '@react-native-community/geolocation';
 import { apiController } from 'app/services/api';
-import LocalStorage from 'app/services/storage';
+import LocalStorage from 'app/providers/storage';
 import _t from 'mady';
 
 import moment from 'moment-timezone';
-import AppUtils from 'app/utils';
+import AppUtils from 'app/providers/utils';
 
 import * as weatherConstants from 'weather/constants';
 

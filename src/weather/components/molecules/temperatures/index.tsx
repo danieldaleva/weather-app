@@ -2,7 +2,7 @@ import React, { useCallback, useContext, useEffect, useState } from 'react';
 
 import { ResponsiveView } from 'app/components/atoms';
 
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 import { WeatherTemps } from 'weather/components/atoms';
 
@@ -22,14 +22,16 @@ const Temperatures: React.FC = () => {
   const [defaultUnit, setDefaultUnit] = useState<UnitEntity>(data.defaultUnit);
 
   const handleSetDefaultUnit = useCallback(async () => {
-    const unit = await utils.getWeatherDefaultUnit(data.defaultUnit.id);
-    setDefaultUnit(unit);
+    if (data.defaultUnit.unit) {
+      const unit = await utils.getWeatherDefaultUnit(data.defaultUnit.id);
+      setDefaultUnit(unit);
+    }
   }, [data.defaultUnit]);
 
   const handleSetTemp = useCallback(() => {
     const weather = data.weather as WeatherResponseEntity;
-    const tempMax = weather.main.temp_max as number;
-    const tempMin = weather.main.temp_min as number;
+    const tempMax = Math.round(weather.main.temp_max as number);
+    const tempMin = Math.round(weather.main.temp_min as number);
     const humidity = weather.main.humidity as number;
     setTemp({
       tempMax: `${tempMax}${defaultUnit.label}`,
@@ -55,7 +57,7 @@ const Temperatures: React.FC = () => {
   }, [data, defaultUnit, handleSetTemp]);
 
   return (
-    <ResponsiveView type="child" style={styles.container}>
+    <ResponsiveView style={styles.container}>
       <WeatherTemps
         name="thermometer"
         type="ionicons"

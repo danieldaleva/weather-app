@@ -6,14 +6,14 @@ import React, {
   useState,
 } from 'react';
 
-import LocalStorage from 'app/services/storage';
+import LocalStorage from 'app/providers/storage';
 import { AppContext } from 'app/contexts/app/AppContext';
 
 import moment from 'moment-timezone';
 
 import * as weatherConstants from 'weather/constants';
 import WeatherReducer from 'weather/contexts/weather/WeatherReducer';
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 
 const utils = new Utils();
 
@@ -34,10 +34,11 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
   const [data, dispatchData] = useReducer(WeatherReducer, initialState);
   const { app, dispatchApp } = useContext(AppContext);
   const [weather, setWeather] = useState<RemoteDataEntity | unknown>({});
+  const [isDataLoaded, setIsDataLoaded] = useState<boolean>(false);
+  const [error, setError] = useState<Error | null>(null);
   const [defaultUnit, setDefaultUnit] = useState<UnitEntity>(
     weatherConstants.defaultUnit,
   );
-  const [error, setError] = useState<Error | null>(null);
 
   const { children } = props;
 
@@ -49,22 +50,24 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
 
   const handleRemoteData = useCallback(async () => {
     console.log('handleRemoteData');
-    const currentData: RemoteDataEntity = await LocalStorage.getLocalStorage(
-      'currentData',
-    );
+    if (app.isAppLoaded) {
+      const currentData: RemoteDataEntity = await LocalStorage.getLocalStorage(
+        'currentData',
+      );
 
-    console.log(currentData);
-    const unit =
-      currentData !== null
-        ? currentData.defaultUnit
-        : weatherConstants.defaultUnit;
-    const response = await utils.getWeatherRemoteData(app, unit.id);
+      const unit =
+        currentData !== null
+          ? currentData.defaultUnit
+          : weatherConstants.defaultUnit;
+      const response = await utils.getWeatherRemoteData(app, unit.id);
 
-    if (response.error) {
-      setError(response.error);
-    } else {
-      setWeather(response.weather);
-      setDefaultUnit(response.defaultUnit);
+      if (response.error) {
+        setError(response.error);
+      } else {
+        setWeather(response.weather);
+        setDefaultUnit(response.defaultUnit);
+        setIsDataLoaded(true);
+      }
     }
   }, [app]);
 
@@ -75,63 +78,63 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
    * @param {string} date
    */
   const getLocalStorageData = useCallback(async (date: string) => {
-    const minute = moment(moment().local().format()).diff(
-      moment.parseZone(date).local().format(),
-      'minute',
-    );
+    if (date) {
+      const minute = moment(moment().local().format()).diff(
+        moment.parseZone(date).local().format(),
+        'minute',
+      );
 
-    if (minute < weatherConstants.REFRESH_TIME) {
-      const currentData = await LocalStorage.getLocalStorage('currentData');
-      if (currentData !== null) {
-        setWeather(currentData.weather);
-        setDefaultUnit(currentData.defaultUnit);
+      if (minute < weatherConstants.REFRESH_TIME) {
+        const currentData = await LocalStorage.getLocalStorage('currentData');
+        if (currentData) {
+          setWeather(currentData.weather);
+          setDefaultUnit(currentData.defaultUnit);
+          setIsDataLoaded(true);
+          return true;
+        }
       }
     }
+
+    return false;
   }, []);
 
-  /**
-   * handleData
-   */
   const handleData = useCallback(async () => {
-    if (app.location !== null) {
+    if (app.isAppLoaded) {
       const date = await LocalStorage.getLocalStorage('date');
+      const local = await getLocalStorageData(date);
 
-      if (date) {
-        await getLocalStorageData(date);
-        dispatchData({
-          type: 'SET_WEATHER_IS_DATA_LOADED',
-          payload: {
-            isDataLoaded: true,
-          },
-        });
-
-        return;
+      if (!local) {
+        await handleRemoteData();
       }
-
-      handleRemoteData().then(() => {
-        dispatchData({
-          type: 'SET_WEATHER_IS_DATA_LOADED',
-          payload: {
-            isDataLoaded: true,
-          },
-        });
-      });
     }
-  }, [app, getLocalStorageData, handleRemoteData]);
+  }, [app.isAppLoaded, getLocalStorageData, handleRemoteData]);
 
   useEffect(() => {
-    (async () => await handleData())();
-  }, [handleData, app]);
+    if (app.isAppLoaded) {
+      (async () => await handleData())();
+    }
+  }, [handleData, app.isAppLoaded]);
+
+  useEffect(() => {
+    if (utils.isObjectNotEmpty(weather)) {
+      dispatchData({
+        type: 'SET_ALL_WEATHER_DATA',
+        payload: {
+          defaultUnit,
+          weather,
+        },
+      });
+    }
+  }, [defaultUnit, weather]);
 
   useEffect(() => {
     dispatchData({
-      type: 'SET_ALL_WEATHER_DATA',
+      type: 'SET_WEATHER_IS_DATA_LOADED',
       payload: {
-        defaultUnit,
-        weather,
+        isDataLoaded,
       },
     });
-  }, [weather, defaultUnit]);
+  }, [isDataLoaded]);
 
   useEffect(() => {
     dispatchApp({

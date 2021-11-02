@@ -6,13 +6,10 @@ import { ResponsiveView } from 'app/components/atoms';
 
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 import { Fonts } from 'weather/styles';
-import Utils from 'weather/utils';
 
 import { CountUp } from 'use-count-up';
 
 import { styles } from './styles';
-
-const utils = new Utils();
 
 const MainTemperature: React.FC = () => {
   const { data } = useContext(WeatherContext);
@@ -24,16 +21,16 @@ const MainTemperature: React.FC = () => {
   const handleSetUnitLabel = useCallback(() => {
     const label = data.defaultUnit.label || '';
     setUnitLabel(label);
-  }, [data.defaultUnit]);
+  }, [data]);
 
   const handleSetTemp = useCallback(() => {
     const weather = data.weather as WeatherResponseEntity;
-    const temperature = Math.round(weather.main.temp as number);
+    const temperature = Math.round(weather.main?.temp as number) || 0;
     setTemp(temperature);
   }, [data]);
 
   useEffect(() => {
-    if (utils.isObjectNotEmpty(data.weather) && data.isDataLoaded) {
+    if (data.isDataLoaded) {
       handleSetTemp();
     }
   }, [data, handleSetTemp]);
@@ -42,7 +39,7 @@ const MainTemperature: React.FC = () => {
     if (data.defaultUnit) {
       handleSetUnitLabel();
     }
-  }, [data.defaultUnit, handleSetUnitLabel]);
+  }, [data, handleSetUnitLabel]);
 
   useEffect(() => {
     if (temp) {

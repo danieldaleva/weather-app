@@ -3,7 +3,7 @@ import { RefreshControl, View } from 'react-native';
 
 import * as Location from 'expo-location';
 
-import LocalStorage from 'app/services/storage';
+import LocalStorage from 'app/providers/storage';
 import { AppContext } from 'app/contexts/app/AppContext';
 import useThemeColor from 'app/hooks/useThemeColor';
 
@@ -15,7 +15,7 @@ import {
   WeatherFooter,
 } from 'weather/components/organisms';
 
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 
 import { ResponsiveScrollView, ResponsiveView } from 'app/components/atoms';
 import { styles } from './styles';

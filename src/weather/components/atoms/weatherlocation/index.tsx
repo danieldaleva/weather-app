@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState, useCallback } from 'react';
 import { Text } from 'react-native';
 
-import Utils from 'app/utils';
+import Utils from 'app/providers/utils';
 import useThemeColor from 'app/hooks/useThemeColor';
 
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';

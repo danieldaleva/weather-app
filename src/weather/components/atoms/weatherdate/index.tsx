@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 import moment from 'moment-timezone';
 
 import useThemeColor from 'app/hooks/useThemeColor';
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 import { Fonts } from 'weather/styles';

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, useCallback } from 'react';
 import { Text } from 'react-native';
 
 import useThemeColor from 'app/hooks/useThemeColor';
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
 import { Fonts } from 'weather/styles';
@@ -26,8 +26,10 @@ const WeatherDetail: React.FC = () => {
   }, [data]);
 
   const handleSetDefaultUnit = useCallback(async () => {
-    const unit = await utils.getWeatherDefaultUnit(data.defaultUnit.id);
-    setDefaultUnit(unit);
+    if (data.defaultUnit.unit) {
+      const unit = await utils.getWeatherDefaultUnit(data.defaultUnit.id);
+      setDefaultUnit(unit);
+    }
   }, [data.defaultUnit]);
 
   const handleSetDate = useCallback(() => {
@@ -46,9 +48,11 @@ const WeatherDetail: React.FC = () => {
   }, [data, defaultUnit]);
 
   useEffect(() => {
-    handleSetDate();
-    handleSetDefaultUnit();
-    handleSetDescription();
+    if (utils.isObjectNotEmpty(data.weather) && data.isDataLoaded) {
+      handleSetDate();
+      handleSetDefaultUnit();
+      handleSetDescription();
+    }
   }, [data, handleSetDate, handleSetDescription, handleSetDefaultUnit]);
 
   return (

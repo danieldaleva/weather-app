@@ -13,7 +13,7 @@ const WeatherContent: React.FC = () => {
       <View style={styles.mainTemp}>
         <MainTemperature />
       </View>
-      <View style={styles.icon}>
+      <View>
         <WeatherIcon
           styles={styles.image}
           width={200}

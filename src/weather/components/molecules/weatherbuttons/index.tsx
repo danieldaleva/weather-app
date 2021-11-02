@@ -6,7 +6,7 @@ import { GlyphIcon, ResponsiveView, Button } from 'app/components/atoms';
 import useThemeColor from 'app/hooks/useThemeColor';
 
 import { WeatherContext } from 'weather/contexts/weather/WeatherContext';
-import Utils from 'weather/utils';
+import Utils from 'weather/providers/utils';
 
 import _t from 'mady';
 
@@ -85,7 +85,7 @@ const WeatherButtons: React.FC = () => {
   }, [dispatchApp, error]);
 
   return (
-    <ResponsiveView type="child" style={styles.container}>
+    <ResponsiveView style={styles.container}>
       <View>
         <Button
           isRefresh={isRemoteData}
