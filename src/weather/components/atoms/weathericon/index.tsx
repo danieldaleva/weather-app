@@ -22,7 +22,7 @@ export const getWeatherIcon = async (
   styles?: StyleProp<SvgProps> | StyleProp<ImageProps> | any,
   viewBox?: string,
   width?: number,
-  height?: number | undefined,
+  height?: number,
 ): Promise<JSX.Element> => {
   if (Platform.OS === 'web') {
     const cachedIcons = await getCachedIcons();

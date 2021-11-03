@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     minHeight: 150,
     maxHeight: 150,
     flexDirection: 'column',
+    width: '100%',
   },
   weatherDate: {
     paddingLeft: 5,

@@ -96,8 +96,10 @@ const WeatherTemplate: React.FC = () => {
 
   return (
     <ResponsiveScrollView
-      style={styles.container}
       type="parent"
+      nativeID="weather-scroll-view"
+      style={styles.container}
+      contentContainerStyle={styles.containerContent}
       refreshControl={
         <RefreshControl
           tintColor={color}
@@ -105,7 +107,7 @@ const WeatherTemplate: React.FC = () => {
           onRefresh={onRefresh}
         />
       }>
-      <ResponsiveView type="child">
+      <ResponsiveView style={[styles.childContainer]} type="child">
         <View style={[styles.header]}>
           <WeatherHeader />
         </View>

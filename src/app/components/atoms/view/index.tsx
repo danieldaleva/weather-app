@@ -16,22 +16,25 @@ export type ViewProps = CustomViewProps & View['props'];
 
 const initialDimensions = {
   width: Dimensions.get('window').width || 'auto',
-  height: '100%',
+  height: Dimensions.get('window').height || 'auto',
 };
 
-const ResponsiveView: React.FC<ViewProps> = ({ children, style, type }) => {
+const ResponsiveView: React.FC<ViewProps> = ({
+  children,
+  style,
+  type,
+  nativeID,
+}) => {
   const { app } = useContext(AppContext);
   const [dimensions, setDimensions] = useState(initialDimensions);
 
   const handleDimensions = useCallback(() => {
     setDimensions({
-      width:
-        (type &&
-          (type === 'parent'
-            ? app.dimensions.width
-            : app.dimensions.width - appConstants.CHILDREN_PADDING)) ||
-        'auto',
-      height: '100%',
+      width: type ? '100%' : 'auto',
+      height:
+        type && type === 'parent'
+          ? app.dimensions.height - appConstants.TAB_BOTTOM_DEFAULT_PADDING
+          : 'auto',
     });
   }, [app.dimensions, type]);
 
@@ -41,11 +44,9 @@ const ResponsiveView: React.FC<ViewProps> = ({ children, style, type }) => {
 
   return (
     <View
+      nativeID={nativeID}
       style={[
-        {
-          width: dimensions.width,
-          height: dimensions.height,
-        },
+        dimensions,
         styles.container,
         type && (type === 'child' ? styles.child : styles.default),
         style,

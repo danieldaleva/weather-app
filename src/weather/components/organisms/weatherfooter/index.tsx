@@ -8,7 +8,7 @@ import { styles } from './styles';
 
 const WeatherFooter: React.FC = () => {
   return (
-    <ResponsiveView type="parent" style={styles.container}>
+    <ResponsiveView style={styles.container}>
       <Temperatures />
     </ResponsiveView>
   );

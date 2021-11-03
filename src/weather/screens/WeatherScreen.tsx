@@ -14,7 +14,7 @@ const WeatherScreen = ({
   const colors = useThemeColor('gradient', null) as string[];
 
   return (
-    <GradientView nativeID={route.key} colors={colors} type="parent">
+    <GradientView nativeID={route.name} colors={colors} type="parent">
       <WeatherTemplate />
     </GradientView>
   );
