@@ -21,7 +21,8 @@ export type ViewProps = CustomViewProps & View['props'];
 
 const initialDimensions = {
   width: Dimensions.get('window').width || 'auto',
-  height: Dimensions.get('window').height || 'auto',
+  // height: Dimensions.get('window').height || 'auto',
+  height: '100%',
 };
 
 const GradientView: React.FC<ViewProps> = ({
@@ -41,12 +42,7 @@ const GradientView: React.FC<ViewProps> = ({
             ? app.dimensions.width
             : app.dimensions.width - appConstants.CHILDREN_PADDING)) ||
         'auto',
-      height:
-        (type &&
-          (type === 'parent'
-            ? app.dimensions.height - appConstants.TAB_BOTTOM_DEFAULT_PADDING
-            : app.dimensions.height)) ||
-        'auto',
+      height: '100%',
     });
   }, [app.dimensions, type]);
 

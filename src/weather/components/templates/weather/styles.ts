@@ -9,5 +9,5 @@ export const styles = StyleSheet.create({
   header: {
     paddingTop: 20,
   },
-  footer: {},
+  footer: { flex: 1 },
 });

@@ -103,7 +103,6 @@ const WeatherTemplate: React.FC = () => {
           tintColor={color}
           refreshing={refreshing}
           onRefresh={onRefresh}
-          progressViewOffset={90}
         />
       }>
       <ResponsiveView type="child">

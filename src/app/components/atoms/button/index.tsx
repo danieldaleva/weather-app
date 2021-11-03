@@ -33,7 +33,7 @@ const Button: React.FC<
   const color = useThemeColor('text', null) as string;
 
   return (
-    <Link to={'#'}>
+    <Link to={'/#'}>
       <Pressable
         onPress={onPress}
         disabled={isRefresh}

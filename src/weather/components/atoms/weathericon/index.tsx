@@ -21,7 +21,7 @@ export const getWeatherIcon = async (
   id: string,
   styles?: StyleProp<SvgProps> | StyleProp<ImageProps> | any,
   viewBox?: string,
-  width?: number | undefined,
+  width?: number,
   height?: number | undefined,
 ): Promise<JSX.Element> => {
   if (Platform.OS === 'web') {
@@ -46,11 +46,11 @@ export const getWeatherIcon = async (
 };
 
 const WeatherIcon: React.FC<{
-  viewBox?: string | undefined;
-  width?: number | undefined;
-  height?: number | undefined;
-  styles?: StyleProp<SvgProps> | undefined;
-  id?: string | undefined;
+  viewBox?: string;
+  width?: number;
+  height?: number;
+  styles?: StyleProp<SvgProps>;
+  id?: string;
 }> = ({ styles, viewBox, width, height, id }) => {
   const { data } = useContext(WeatherContext);
   const [icon, setIcon] = useState<any>();

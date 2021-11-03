@@ -5,12 +5,16 @@ import { GradientView } from 'app/components/atoms';
 import useThemeColor from 'app/hooks/useThemeColor';
 
 import { WeatherTemplate } from 'weather/components/templates';
+import { Routes } from 'app/navigation/types';
+import { StackScreenProps } from '@react-navigation/stack';
 
-const WeatherScreen: React.FC = () => {
+const WeatherScreen = ({
+  route,
+}: StackScreenProps<RootTabParamList, Routes.Storybook>) => {
   const colors = useThemeColor('gradient', null) as string[];
 
   return (
-    <GradientView nativeID="Storybook" colors={colors} type="parent">
+    <GradientView nativeID={route.key} colors={colors} type="parent">
       <WeatherTemplate />
     </GradientView>
   );
