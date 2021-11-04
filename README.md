@@ -129,7 +129,7 @@ and the local app will be availabla at [http://localhost:8080/mady/](http://loca
 
 The storybook framework was used to provide documentation for common graphic components, like buttons, toasts, inputs and templates.
 
-To run **StoryBook** just type in terminal
+To run **StoryBook** just type in terminal:
 
 ```sh
 yarn storybook
@@ -141,7 +141,7 @@ and the local app will be available at [http://localhost:7007/](http://localhost
 
 ## Documentation
 
-Documentation generation run Typedoc
+To generate the documentation run Typedoc.
 
 ```sh
 yarn typedoc
@@ -149,6 +149,7 @@ yarn serve:docs
 ```
 
 This is the link to access the local documentation [http://127.0.0.1:8080](http://127.0.0.1:8080)
+
 
 To generate the README.md with toc, please run:
 
