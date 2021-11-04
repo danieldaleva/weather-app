@@ -33,7 +33,8 @@ export const getWeatherIcon = async (
   }
 
   const list: { [key: string]: any } = IconComponents;
-  const idUppercase = id.toUpperCase();
+  const camelCase = id.split('')[0].toUpperCase();
+  const idUppercase = id.replace(id.split('')[0], camelCase);
 
   return (
     <SvgWithCss
@@ -91,6 +92,7 @@ const WeatherIcon: React.FC<{
         }
       }
 
+      console.log(id);
       const component = await getWeatherIcon(
         id || weatherConstants.weatherAppIcons[iconIndex],
         styles,

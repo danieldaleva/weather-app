@@ -49,7 +49,6 @@ const WeatherContextProvider: React.FC<ReactPropsEntity> = (
    */
 
   const handleRemoteData = useCallback(async () => {
-    console.log('handleRemoteData');
     if (app.isAppLoaded) {
       const currentData: RemoteDataEntity = await LocalStorage.getLocalStorage(
         'currentData',

@@ -30,12 +30,11 @@ const WeatherButtons: React.FC = () => {
       if (response.error) {
         setIsRemoteData(false);
         setIsChangeUnit(false);
-        return dispatchApp({
-          type: 'SET_ERROR',
-          payload: {
-            error: response.error,
-          },
+        setError({
+          name: 'INTERNET_DISCONNECTED',
+          message: response.error.message,
         });
+        return;
       }
       setIsRemoteData(false);
       setIsChangeUnit(false);
@@ -47,7 +46,7 @@ const WeatherButtons: React.FC = () => {
         },
       });
     },
-    [app, data.defaultUnit.id, dispatchApp, dispatchData],
+    [app, data.defaultUnit.id, dispatchData],
   );
 
   const handleSetIsRemoteData = async (): Promise<void> => {
@@ -76,12 +75,14 @@ const WeatherButtons: React.FC = () => {
   };
 
   useEffect(() => {
-    dispatchApp({
-      type: 'SET_ERROR',
-      payload: {
-        error,
-      },
-    });
+    if (error) {
+      dispatchApp({
+        type: 'SET_ERROR',
+        payload: {
+          error,
+        },
+      });
+    }
   }, [dispatchApp, error]);
 
   return (

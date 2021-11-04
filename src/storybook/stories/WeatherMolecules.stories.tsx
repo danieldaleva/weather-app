@@ -1,21 +1,23 @@
 import React from 'react';
-import { Colors } from 'app/styles';
+
 import { storiesOf } from '@storybook/react-native';
 import { withKnobs } from '@storybook/addon-knobs';
-import { GradientView } from 'app/components/atoms';
+import { ResponsiveView } from 'app/components/atoms';
 import { Temperatures, WeatherButtons } from 'weather/components/molecules';
+
+import { styles } from './styles';
 
 const Molecules = storiesOf('molecules', module);
 Molecules.addDecorator(withKnobs);
 
 Molecules.add('Weather Temperatures', () => (
-  <GradientView type="parent" colors={Colors.light.gradient} style={[]}>
+  <ResponsiveView type="parent" style={styles.container}>
     <Temperatures />
-  </GradientView>
+  </ResponsiveView>
 ));
 
 Molecules.add('Weather Buttons', () => (
-  <GradientView type="parent" colors={Colors.light.gradient} style={[]}>
+  <ResponsiveView type="parent" style={styles.container}>
     <WeatherButtons />
-  </GradientView>
+  </ResponsiveView>
 ));
