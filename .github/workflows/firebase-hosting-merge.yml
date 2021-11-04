@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm i -g expo-cli && rm -rf node_modules && rm yarn.lock && yarn install && yarn web:build
+      - run: npm i -g expo-cli && rm -rf node_modules && rm yarn.lock && yarn install && expo web:build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
