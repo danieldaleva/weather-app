@@ -10,7 +10,7 @@ const LoaderScreen: React.FC = () => {
   const color = useThemeColor('text', null) as string;
 
   return (
-    <GradientView colors={colors} type="child" style={styles.container}>
+    <GradientView colors={colors} style={styles.container}>
       <View>
         <ActivityIndicator size="large" color={color} />
       </View>

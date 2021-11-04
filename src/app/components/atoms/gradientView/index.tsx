@@ -20,8 +20,8 @@ type CustomViewProps = {
 export type ViewProps = CustomViewProps & View['props'];
 
 const initialDimensions = {
-  width: Dimensions.get('window').width,
-  height: Dimensions.get('window').height,
+  width: Dimensions.get('window').width || 'auto',
+  height: Dimensions.get('window').height || 'auto',
 };
 
 const GradientView: React.FC<ViewProps> = ({
@@ -29,17 +29,18 @@ const GradientView: React.FC<ViewProps> = ({
   children,
   style,
   type,
+  nativeID,
 }) => {
   const { app } = useContext(AppContext);
   const [dimensions, setDimensions] = useState(initialDimensions);
 
   const handleDimensions = useCallback(() => {
     setDimensions({
-      width: app.dimensions.width,
+      width: type ? '100%' : 'auto',
       height:
         type && type === 'parent'
           ? app.dimensions.height - appConstants.TAB_BOTTOM_DEFAULT_PADDING
-          : app.dimensions.height,
+          : 'auto',
     });
   }, [app.dimensions, type]);
 
@@ -49,14 +50,12 @@ const GradientView: React.FC<ViewProps> = ({
 
   return (
     <LinearGradient
+      nativeID={nativeID}
       colors={colors}
       start={Gradients.linearGradient.linearVertical.start}
       end={Gradients.linearGradient.linearVertical.end}
       style={[
-        {
-          width: dimensions.width,
-          height: dimensions.height,
-        },
+        dimensions,
         styles.container,
         type && (type === 'child' ? styles.child : styles.default),
         style,

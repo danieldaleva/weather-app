@@ -15,25 +15,28 @@ type CustomViewProps = {
 export type ViewProps = CustomViewProps & ScrollView['props'];
 
 const initialDimensions = {
-  width: Dimensions.get('window').width,
-  height: Dimensions.get('window').height,
+  width: Dimensions.get('window').width || 'auto',
+  height: Dimensions.get('window').height || 'auto',
 };
 
 const ResponsiveScrollView: React.FC<ViewProps> = ({
   children,
   style,
+  contentContainerStyle,
   type,
+  refreshControl,
+  nativeID,
 }) => {
   const { app } = useContext(AppContext);
   const [dimensions, setDimensions] = useState(initialDimensions);
 
   const handleDimensions = useCallback(() => {
     setDimensions({
-      width: app.dimensions.width,
+      width: type ? '100%' : 'auto',
       height:
         type && type === 'parent'
           ? app.dimensions.height - appConstants.TAB_BOTTOM_DEFAULT_PADDING
-          : app.dimensions.height,
+          : 'auto',
     });
   }, [app.dimensions, type]);
 
@@ -43,11 +46,11 @@ const ResponsiveScrollView: React.FC<ViewProps> = ({
 
   return (
     <ScrollView
+      nativeID={nativeID}
+      refreshControl={refreshControl}
+      contentContainerStyle={[dimensions, contentContainerStyle]}
       style={[
-        {
-          width: dimensions.width,
-          height: dimensions.height,
-        },
+        dimensions,
         styles.container,
         type && (type === 'child' ? styles.child : styles.default),
         style,
