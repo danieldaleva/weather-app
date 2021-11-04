@@ -2,8 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    minHeight: 150,
-    maxHeight: 150,
+    height: 150,
     flexDirection: 'column',
     width: '100%',
   },

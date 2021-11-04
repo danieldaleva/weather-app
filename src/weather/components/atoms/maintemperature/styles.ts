@@ -6,5 +6,6 @@ export const styles = StyleSheet.create({
     minHeight: 140,
     maxHeight: 140,
     width: '100%',
+    flex: 1,
   },
 });
