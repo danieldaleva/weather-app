@@ -92,7 +92,6 @@ const WeatherIcon: React.FC<{
         }
       }
 
-      console.log(id);
       const component = await getWeatherIcon(
         id || weatherConstants.weatherAppIcons[iconIndex],
         styles,
