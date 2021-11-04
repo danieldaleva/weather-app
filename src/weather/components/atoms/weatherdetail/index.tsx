@@ -26,11 +26,11 @@ const WeatherDetail: React.FC = () => {
   }, [data]);
 
   const handleSetDefaultUnit = useCallback(async () => {
-    if (data.defaultUnit.unit) {
+    if (data.defaultUnit) {
       const unit = await utils.getWeatherDefaultUnit(data.defaultUnit.id);
       setDefaultUnit(unit);
     }
-  }, [data.defaultUnit]);
+  }, [data]);
 
   const handleSetDate = useCallback(() => {
     if (
@@ -39,9 +39,9 @@ const WeatherDetail: React.FC = () => {
       defaultUnit
     ) {
       const weather = data.weather as WeatherResponseEntity;
-      const feelsLike = `${parseInt(weather.main.feels_like.toString())}${
-        defaultUnit.label
-      }`;
+      const feelsLike = `${Math.round(
+        weather.main.feels_like as number,
+      ).toString()}${defaultUnit.label}`;
 
       setDetail(feelsLike);
     }

@@ -22,11 +22,11 @@ const Temperatures: React.FC = () => {
   const [defaultUnit, setDefaultUnit] = useState<UnitEntity>(data.defaultUnit);
 
   const handleSetDefaultUnit = useCallback(async () => {
-    if (data.defaultUnit.unit) {
+    if (data.defaultUnit) {
       const unit = await utils.getWeatherDefaultUnit(data.defaultUnit.id);
       setDefaultUnit(unit);
     }
-  }, [data.defaultUnit]);
+  }, [data]);
 
   const handleSetTemp = useCallback(() => {
     const weather = data.weather as WeatherResponseEntity;

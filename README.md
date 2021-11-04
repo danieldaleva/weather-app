@@ -21,7 +21,7 @@
 
 ## About
 
-Weather Map is a demo project in [React-Native](https://reactnative.dev/). It runs embedded the Storybook with the components decoupled using Atomic Design pattern.
+Weather Map is a demo project made with [React-Native](https://reactnative.dev/). It runs Storybook embedded with all components decoupled using **Atomic Design** pattern.
 
 <a id="demonstration"></a>
 
@@ -71,7 +71,7 @@ The **Metro** Blunder will be available at [http://localhost:19002/](http://loca
 
 ## Project Structure
 
-The project folder structure respect the **Feature based** development. Each **Feature** folder contain the same structure being some folders optional. All of them refers to the **App Feature** as base for styles, contexts, services, constants, components etc... but can contain one or more of these as needed.
+The project folder structure respect the **Feature based** development. Each **Feature** folder contain the same structure being some folders optional. All of them refers to the **App Feature** as base for styles, contexts, services, constants, components etc... but can contain one or more of these asneeded.
 
 ```sh
 .
@@ -81,8 +81,8 @@ The project folder structure respect the **Feature based** development. Each **F
 ├── ios                             # iOS Source Code
 ├── public                          # public folder for Web generation
 ├── src
-│   ├── @types
-│   ├── app                         # App Feature (default)
+│   ├── app                         # App Feature (default feature)
+│   │   ├── @types                  # types for App Feature
 │   │   ├── assets                  # Application Assets (icons | fonts)
 │   │   ├── components              # Atomic design
 │   │   │    ├── atoms              # Atoms Components
@@ -149,7 +149,6 @@ yarn serve:docs
 ```
 
 This is the link to access the local documentation [http://127.0.0.1:8080](http://127.0.0.1:8080)
-
 
 To generate the README.md with toc, please run:
 

@@ -46,7 +46,7 @@ const WeatherButtons: React.FC = () => {
         },
       });
     },
-    [app, data.defaultUnit.id, dispatchData],
+    [app, data.defaultUnit, dispatchData],
   );
 
   const handleSetIsRemoteData = async (): Promise<void> => {

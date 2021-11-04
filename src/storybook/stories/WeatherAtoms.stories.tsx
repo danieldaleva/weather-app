@@ -42,7 +42,7 @@ AtomStories.add('Theme Day View', () => {
 AtomStories.add('Theme Night View', () => (
   <GradientView type="parent" colors={Colors.dark.gradient}>
     <ResponsiveView type="parent" style={styles.container}>
-      <WeatherIcon id="i800a01d" />
+      <WeatherIcon id="i800a01n" />
     </ResponsiveView>
   </GradientView>
 ));
