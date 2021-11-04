@@ -29,7 +29,7 @@ Weather Map is a demo project in [React-Native](https://reactnative.dev/). It ru
 
 Access the link [Weather App Demonstration](https://weather-appd.firebaseapp.com/).
 
-<p><img width="100%" src="./docs/_screens/allscreens.png"></p>
+<p><img width="100%" src="./_screens/allscreens.png"></p>
 
 <a id="intstall-and-run"></a>
 
@@ -121,7 +121,7 @@ yarn translate
 
 and the local app will be availabla at [http://localhost:8080/mady/](http://localhost:8080/mady/).
 
-<p><img width="100%" src="./docs/_screens/mady.png"></p>
+<p><img width="100%" src="./_screens/mady.png"></p>
 
 <a id="storybook"></a>
 
@@ -137,7 +137,7 @@ yarn storybook
 
 and the local app will be available at [http://localhost:7007/](http://localhost:7007/).
 
-<p><img  width="100%"  src="./docs/_screens/storybook.png"></p>
+<p><img  width="100%"  src="./_screens/storybook.png"></p>
 
 ## Documentation
 
