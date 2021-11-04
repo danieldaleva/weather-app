@@ -8,13 +8,19 @@ import { WeatherTemplate } from 'weather/components/templates';
 import { Routes } from 'app/navigation/types';
 import { StackScreenProps } from '@react-navigation/stack';
 
+import { styles } from './styles';
+
 const WeatherScreen = ({
   route,
 }: StackScreenProps<RootTabParamList, Routes.Storybook>) => {
   const colors = useThemeColor('gradient', null) as string[];
 
   return (
-    <GradientView nativeID={route.name} colors={colors} type="parent">
+    <GradientView
+      nativeID={route.name}
+      style={styles.container}
+      colors={colors}
+      type="parent">
       <WeatherTemplate />
     </GradientView>
   );

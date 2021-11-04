@@ -10,6 +10,8 @@
     "userInterfaceStyle": "automatic",
     "primaryColor": "#39a0d3",
     "backgroundColor": "#39a0d3",
+    "orientation": "portrait",
+    "version": "0.0.1",
     "splash": {
       "image": "./src/app/assets/resources/splash.png",
       "resizeMode": "contain",
