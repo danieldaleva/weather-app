@@ -1,9 +1,9 @@
 // import './wydr';
 
-import AppContextProvider from 'app/contexts/app/AppContext';
-import WeatherContextProvider from 'weather/contexts/weather/WeatherContext';
-import { useThemeColor } from 'app/hooks';
-import Navigation from 'app/navigation';
+import AppContextProvider from './src/app/contexts/app/AppContext';
+import WeatherContextProvider from './src/weather/contexts/weather/WeatherContext';
+import { useThemeColor } from './src/app/hooks';
+import Navigation from './src/app/navigation';
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
