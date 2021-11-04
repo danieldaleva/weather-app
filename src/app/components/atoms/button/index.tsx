@@ -33,7 +33,8 @@ const Button: React.FC<
   const color = useThemeColor('text', null) as string;
 
   return (
-    <Link to={'/#'}>
+    // eslint-disable-next-line no-script-url
+    <Link to={'javascript: void(0)'}>
       <Pressable
         onPress={onPress}
         disabled={isRefresh}
