@@ -148,10 +148,9 @@ yarn typedoc
 yarn serve:docs
 ```
 
-Access de generated documentation from
-[http://127.0.0.1:8080](http://127.0.0.1:8080)
+This is the link to access the local documentation [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
-For README.md, run
+To generate the README.md with toc, please run
 
 ```sh
 yarn doctoc
