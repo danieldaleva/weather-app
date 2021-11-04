@@ -150,7 +150,7 @@ yarn serve:docs
 
 This is the link to access the local documentation [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
-To generate the README.md with toc, please run
+To generate the README.md with toc, please run:
 
 ```sh
 yarn doctoc
