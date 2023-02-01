@@ -71,7 +71,7 @@ The **Metro** Blunder will be available at [http://localhost:19002/](http://loca
 
 ## Project Structure
 
-The project folder structure respect the **Feature based** development. Each **Feature** folder contain the same structure being some folders optional. All of them refers to the **App Feature** as base for styles, contexts, services, constants, components etc... but can contain one or more of these asneeded.
+The project folder structure respect the **Feature based** development. Each **Feature** folder contain the same structure being some folders optional. All of them refers to the **App Feature** as base for styles, contexts, services, constants, components etc... but can contain one or more of these as needed.
 
 ```sh
 .
@@ -99,7 +99,7 @@ The project folder structure respect the **Feature based** development. Each **F
 │   │   ├── services                # Storage Api
 │   │   ├── styles                  # Global styles
 │   │   └── providers               # Auxiliar functions and classes
-│   │   types...                    # Entities and Types
+│   │   types.ts                    # Entities and Types
 ├── storybook                       # Storybook Feature
 │   └── ...                         # ... uses the same structure from App Featrure
 ├── weather                         # Weather Feature
